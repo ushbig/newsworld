@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Post</title>
+{%  endblock  %}
+
+
+{% block body %}
+<h1>Post page </h1>
+
+{% for post in posts%}
+<h2>{{post.title}}</h2>
+<p>{{post.content}}</p>
+{%if post.Author%}
+
+<h3>By : {{post.Author}}</h3>
+
+{%else%}
+<h3>By : N/V</h3>
+{%endif%}
+{% endfor%}
+{%  endblock  %}
