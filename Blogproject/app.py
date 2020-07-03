@@ -71,5 +71,5 @@ def new_post():
     else:
         return render_template('new_post.html' )
 if __name__ == "__main__":
-    app.run(debug= True)
+    app.run()
     
