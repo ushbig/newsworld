@@ -1,6 +1,5 @@
-venv
-*.pyc
-staticfiles
-.env
-db.sqlite3
-getting-started/*
+
+__pycache__
+model/__pycache__
+routes/__pycache__
+.vscode
